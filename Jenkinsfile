@@ -32,8 +32,8 @@ pipeline {
             }
         stage('Push') {
           steps {
-                sh 'docker tag nginx_test localhost:8082/nginx_test'
-                sh 'docker push localhost:8082/nginx_test'   
+                sh 'docker tag nginx localhost:8082/nginx'
+                sh 'docker push localhost:8082/nginx'   
           }
     }
   }
