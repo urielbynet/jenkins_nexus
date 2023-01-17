@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-      NEXUS_CREDS = credentials('nexus-credentials-id')
+      NEXUS_CREDS = credentials('nexus_credentials')
     } 
     stages {
        /*stage('Containers run') {
