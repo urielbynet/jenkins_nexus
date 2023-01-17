@@ -9,7 +9,7 @@ pipeline {
               sh 'docker compose up -d'
               }  
             }
-        }*/
+        }
         stage('SonarQube Analysis') {
 		        steps{
               script {
@@ -19,7 +19,7 @@ pipeline {
    			   }
 		    }
 		}
-	    }
+	    }*/
         stage('Build') {
             steps {
               sh 'docker build -t nginx .'
